@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+# Clave de Web IQ: solo en local, nunca en el repositorio
+.env
+.env.*
+!.env.example
+# Variables and secrets created by Azure CLI/Bicep.
+.azure/
+*.bicepparam
+# Análisis interno de clientes: NUNCA subir al repositorio
+privado/
+.copilot-azure/
+# Branding added for private presentations must not enter the public sample.
+/public/logos/*
+!/public/logos/README.md

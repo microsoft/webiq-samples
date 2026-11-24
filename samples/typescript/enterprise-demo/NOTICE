@@ -1,0 +1,22 @@
+Enterprise demo for Microsoft Web IQ
+
+This sample adapts code and documentation from:
+https://github.com/jrubiosainz/WebIQ-Demo
+Customer-neutral source revision: c371d71f84624811147c6139cb32e92677d6ff88
+
+Original code: Copyright (c) 2026 jrubiosainz.
+Licensed under the MIT License. The original copyright and permission notice
+are preserved in the LICENSE file in this directory.
+
+Contributions to this repository carry the Microsoft copyright and MIT license
+notice required by the repository's contribution guidelines. Those notices do
+not remove or supersede the original copyright.
+
+No customer logos, private organization profiles, local settings, or generated
+live-service output are included. Telecom provider names identify subjects of
+public-source research; the example contracts are explicitly synthetic.
+
+Package dependencies are installed separately. Fontsource fonts use OFL-1.1;
+Lucide icons use ISC. See THIRD_PARTY_NOTICES.md for dependency and content
+notices. Referenced websites and their content remain subject to their own
+licenses, copyrights, and terms.
