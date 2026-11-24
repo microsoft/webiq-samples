@@ -7,8 +7,10 @@ Runnable examples and agent instruction skills for building applications with Mi
 This repository includes the runnable code, deployment samples, and agent instruction skills listed below.
 These are educational samples, not production-ready reference architectures.
 Review each sample's security, cost, and operational requirements before use
-or deployment. No third-party source code is vendored; the samples install
-their dependencies separately.
+or deployment. The Enterprise demo includes MIT-licensed code adapted from
+[`jrubiosainz/WebIQ-Demo`](https://github.com/jrubiosainz/WebIQ-Demo);
+its [NOTICE](samples/typescript/enterprise-demo/NOTICE) and original license are
+preserved. The samples install their package dependencies separately.
 
 ## Samples
 
@@ -25,6 +27,7 @@ run instructions, and validation steps.
 
 | Sample | Language | Description | Telemetry and notices |
 |---|---|---|---|
+| [Enterprise demo](samples/typescript/enterprise-demo/) | TypeScript, Node.js, Bicep | Six scripted enterprise scenarios, a live multi-vertical search playground, and an optional Foundry supplier-contract agent. Bilingual ES/EN UI with generic sector profiles and no bundled customer branding. Web IQ, model, and optional Azure resource usage may incur costs. | No added analytics or telemetry collector. Server diagnostics include counts, timing, configuration and upstream errors; the optional agent CLI prints queries and answers. [Data handling and local storage](samples/typescript/enterprise-demo/README.md#telemetry-and-data-handling). Imported MIT code is attributed in [NOTICE](samples/typescript/enterprise-demo/NOTICE). |
 | [WebIQ Auto agent skills](agent-skills/README.md) | Agent instructions | Optional search-efficiency guidance for agents using WebIQ Auto. Includes installation requirements and workload-specific evaluation guidance; answer quality preservation is not established. | No telemetry is added by the instruction files. Model and search usage may incur separate costs. |
 | [Movie Night](samples/typescript/movie-chat/) | TypeScript | Agent-planned Web IQ Auto queries, linked citations, and movie media in a React chat UI. Certificate-based Entra authentication for Web IQ. Uses Azure OpenAI; model usage is a separate cost. | Local logs include queries and cited URLs by default; browser diagnostics expose retrieved passages. [Logging, retention, opt-out, and data-handling constraints](samples/typescript/movie-chat/README.md#data-handling-and-usage-constraints). No telemetry is sent to repository maintainers. |
 | [Web IQ + Foundry Voice Agent](samples/python/foundry-voice-agent/) | Python, TypeScript | Native Microsoft Foundry voice agent that decides when to search Web IQ Auto web and news evidence and shows cited sources after speaking. Choose a compatible model; model usage is a separate cost. | Bounded local timing/count logs are disabled by default; set `PERF_LOG_ENABLED=1` to enable. [Privacy and retention guidance](samples/python/foundry-voice-agent/README.md#telemetry). No telemetry is sent to repository maintainers. |
